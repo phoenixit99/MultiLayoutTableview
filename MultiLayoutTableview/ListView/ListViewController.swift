@@ -15,8 +15,21 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        OneColumnController.injectCell(tableView: tbListView)
+        TwoColumnController.injectCell(tableView: tbListView)
+        
         tbListView.delegate = self
         tbListView.dataSource = self
+        tbListView.reloadData()
+    }
+    
+    @IBAction func simpleCellAction(_ sender: Any) {
+        viewModel.setPriorityFirstColumn()
+        tbListView.reloadData()
+    }
+    
+    @IBAction func complexCellAction(_ sender: Any) {
+        viewModel.setPrioritySecondColumn()
         tbListView.reloadData()
     }
 }
@@ -45,7 +58,7 @@ extension ListViewController : UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        // Todo
     }
 }
 

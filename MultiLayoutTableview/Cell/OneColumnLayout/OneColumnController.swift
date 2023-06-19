@@ -10,14 +10,18 @@ import UIKit
 
 class OneColumnController : MultiLayoutProtocol {
     
-    static func configure(tableView: UITableView) {
-        tableView.register(
-            UINib(
-                nibName: OneColumnCell.cellIdentifier,
-                bundle: Bundle.main
-            ),
-            forCellReuseIdentifier: OneColumnCell.cellIdentifier
-        )
+    private var data: [String] = []
+    private var orderId: Int = 1
+
+    static func injectCell(tableView: UITableView) {
+        tableView.register(OneColumnCell.cellIdentifier)
+    }
+    
+    func configure(_ data: [String]) {
+        self.data = data
+    }
+    func setOrder(_ orderId: Int) {
+        self.orderId = orderId
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
@@ -28,17 +32,10 @@ class OneColumnController : MultiLayoutProtocol {
     }
     
     func getHeightForRow() -> CGFloat {
-        return 50.0
+        return 150.0
     }
     
     func getOrder() -> Int {
-        return 1
-    }
-    func getId() -> String {
-        return ""
-    }
-    
-    func getSection() -> String {
-        return "0"
+        return orderId
     }
 }

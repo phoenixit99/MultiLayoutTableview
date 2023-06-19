@@ -9,14 +9,10 @@ import UIKit
 
 protocol MultiLayoutProtocol {
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     
     func getHeightForRow() -> CGFloat
     
     func getOrder() -> Int
-    
-    func getId() -> String
-    
-    func getSection() -> String
     
 }

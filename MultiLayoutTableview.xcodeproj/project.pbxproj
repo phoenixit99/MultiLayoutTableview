@@ -24,6 +24,7 @@
 		B774F9DA2A3ECBE6006B351D /* OneColumnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B774F9D82A3ECBE6006B351D /* OneColumnCell.xib */; };
 		B774F9DD2A3ECC4E006B351D /* TwoColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774F9DB2A3ECC4E006B351D /* TwoColumnCell.swift */; };
 		B774F9DE2A3ECC4E006B351D /* TwoColumnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B774F9DC2A3ECC4E006B351D /* TwoColumnCell.xib */; };
+		B774F9E02A3F1666006B351D /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774F9DF2A3F1666006B351D /* UITableView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B774F9D82A3ECBE6006B351D /* OneColumnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneColumnCell.xib; sourceTree = "<group>"; };
 		B774F9DB2A3ECC4E006B351D /* TwoColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnCell.swift; sourceTree = "<group>"; };
 		B774F9DC2A3ECC4E006B351D /* TwoColumnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoColumnCell.xib; sourceTree = "<group>"; };
+		B774F9DF2A3F1666006B351D /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				B774F9CE2A3EC91C006B351D /* MultiLayoutProtocol.swift */,
+				B774F9DF2A3F1666006B351D /* UITableView+Extensions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				B774F99F2A3EC5BD006B351D /* ListViewController.swift in Sources */,
 				B774F9D22A3EC9E0006B351D /* OneColumnController.swift in Sources */,
 				B774F9DD2A3ECC4E006B351D /* TwoColumnCell.swift in Sources */,
+				B774F9E02A3F1666006B351D /* UITableView+Extensions.swift in Sources */,
 				B774F99B2A3EC5BD006B351D /* AppDelegate.swift in Sources */,
 				B774F9CB2A3EC87C006B351D /* ListViewModel.swift in Sources */,
 				B774F9D92A3ECBE6006B351D /* OneColumnCell.swift in Sources */,
